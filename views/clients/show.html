@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="/uploads/{{client.picture}}" alt="{{client.name}}" style="width: 100%">
+        </div>
+        <div class="col-sm-9">
+            <h2 style="color:#FFFFFF">{{client.name}} <small> Client n°{{client.number}}</small></h2>
+            <a href="/edit/{{client._id}}" class="btn btn-success">Editer</a>
+            <a href="/delete/{{client._id}}" class="btn btn-danger">Supprimer</a>
+            <hr>
+            <p style="color:#FFFFFF" class="lead">
+                {{client.description}}
+            </p>
+            <h3 style="color:#FFFFFF"> Types :</h3>
+            {% for t in client.types %}
+            <a href="/types/{{t.name}}" style="background-color: {{t.color}}" class="label label-primary">{{t.name}}</a>
+            {%endfor%}
+        </div>
+    </div>
+{% endblock %}

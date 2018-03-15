@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <form method="POST" action="{{endpoint}}" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name" style="color:#FFFFFF" >Nom du client</label>
+            <input type="text" id="name" name="name" class="form-control" value="{{client.name}}">
+        </div>
+        <div class="form-group">
+            <label for="number" style="color:#FFFFFF">Numero</label>
+            <input type="number" id="number" name="number" class="form-control" value="{{client.number"}} >
+        </div>
+        <div class="form-group">
+            <label for="description" style="color:#FFFFFF">Description</label>
+            <textarea class="form-control" id="description" name="description">{{client.description}}</textarea>
+        </div>
+        <div class="form-group">
+            <label for="file" style="color:#FFFFFF">Image</label>
+            <input type="file" id="name" name="file" style="color:#FFFFFF">
+        </div>
+        <div class="form-group" style="color:#FFFFFF">
+            {% for type in types %}
+            <label>
+                <input style="color:#FFFFFF" type="checkbox" name="types[]" value="{{type._id}}" {% if client.types.indexOf(type._id) != -1 %}checked{% endif %}>
+                {{type.name}}
+            </label>
+            {% endfor %}
+        </div>
+        <input type="submit" class="btn btn-primary" value="Enregistrer"/>
+    </form>
+{% endblock %}
+    

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Clients avec les fonds <span color="color: {{type.color}}">{{type.name}}</span></h2>
+    <hr>
+    {% for p in clients %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="/{{p._id}}">{{p.name}}</a>
+            </div>
+        </div>
+
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content2 %}
+    <h2 style="color:#FFFFFF">Fonds</h2>
+    <a href="/new" class="btn btn-primary">Ajouter un fond</a>
+    <hr>
+    {% for p in fonds %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="/{{f._id}}">{{f.name}}</a>
+            </div>
+        </div>
+
+    {% endfor %}
+
+{% endblock %}
