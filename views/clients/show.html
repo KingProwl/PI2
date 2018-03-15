@@ -13,7 +13,7 @@
             <p style="color:#FFFFFF" class="lead">
                 {{client.description}}
             </p>
-            <h3 style="color:#FFFFFF"> Types :</h3>
+            <h3 style="color:#FFFFFF"> Investissements du client :</h3>
             {% for t in client.types %}
             <a href="/types/{{t.name}}" style="background-color: {{t.color}}" class="label label-primary">{{t.name}}</a>
             {%endfor%}

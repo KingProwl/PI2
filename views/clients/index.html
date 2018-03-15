@@ -5,13 +5,16 @@
     <a href="/new" class="btn btn-primary">Ajouter un client</a>
     <hr >
     {% for p in clients %}
-        <div class="card border-warning mb-3" style="max-width: 18rem;">
+    
+        <div class="card border-warning mb-3" style="max-width: 30rem;" id="cartes">
             <div class="card-body">
                 <div class="card-header">
                     {{p.name}}
                 </div>
-                
-                <a href="/{{p._id}}" class="btn btn-primary">Voir fiche client</a>
+                <div class="card-text">
+                    {{p.description}}
+                </div>
+                <a href="/{{p._id}}" class="btn btn-primary float-center">Voir fiche client</a>
             </div>
         </div>
 

@@ -11,7 +11,7 @@ body {
   
   
   background: linear-gradient(to right, #16222a, #3a6073);
-  height: 100vh;
+  
   outline: 2px solid #F2C608;
 }
 
@@ -34,6 +34,11 @@ h1 {
   background-color: #e0dfdc;
 }
 
+.card {
+  margin: 30px; 
+  float: none; 
+  margin-bottom: 10px; 
+}
 
 footer{
     border-top: 3px solid #FFF;
@@ -55,5 +60,7 @@ footer{
      line-height: 100%;    
  }
 
-
+hr {
+  border-color: #FFF;
+}
 
