@@ -58,6 +58,11 @@ Wait for importation then open your MongoDB GUI (robo3T or studio3T ect) and che
 Then you can launch the app using app.js in the Node.js command prompt like so:
 
 ```
+npm start
+```
+Or,
+
+```
 node app.js
 ```
 
