@@ -1,10 +1,14 @@
 {
-  "name": "testpokedex",
+  "name": "AssetSagacity",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mongo": "md mongo-db & \"C:/Program Files/MongoDB/Server/3.4/bin/mongod.exe\" --dbpath mongo-db\"",
+    "start" : "node app.js"
+    
+
   },
   "author": "",
   "license": "ISC",
