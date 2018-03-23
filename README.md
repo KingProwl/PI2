@@ -38,7 +38,7 @@ mongod
 ***
 ## 🔼 Create database and fill it
 
-To do so, take the two files clients.json and types.json and put them in the MongoDB/Server/3.4/bin folder (where is mongod) then run the command:
+To do so, take the two files **clients.json** and **types.json** and put them in the MongoDB/Server/3.4/bin folder (where is mongod) then, in this folder, run the command:
 
 ```
 mongoimport --host localhost:27017 --db asset --collection clients clients.json
