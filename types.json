@@ -1,20 +1,4 @@
-{
-    "_id" : ObjectId("5a8f4d7a325c881a4d5fe835"),
-    "name" : "investissement1",
-    "color" : "red"
-}
-{
-    "_id" : ObjectId("5a8f4d97325c881a4d5fe851"),
-    "name" : "investissement2",
-    "color" : "blue"
-}
-{
-    "_id" : ObjectId("5a8f4da8325c881a4d5fe85a"),
-    "name" : "investissement3",
-    "color" : "green"
-}
-{
-    "_id" : ObjectId("5a8febaa1a426fb0ec1cc301"),
-    "name" : "investissement4",
-    "color" : "purple"
-}
+{"_id":{"$oid":"5ab551ca154e78232cc0421b"},"name":"investissement1","color":"red"}
+{"_id":{"$oid":"5ab551d6154e78232cc04221"},"name":"investissement2","color":"blue"}
+{"_id":{"$oid":"5ab551fd154e78232cc04235"},"name":"investissement3","color":"green"}
+{"_id":{"$oid":"5ab55283154e78232cc04270"},"name":"investissement4","color":"purple"}
