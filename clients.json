@@ -1,0 +1,61 @@
+{
+{
+    "_id" : ObjectId("5aa5a906847db61578ff2ea1"),
+    "types" : [ 
+        ObjectId("5a8f4d7a325c881a4d5fe835"), 
+        ObjectId("5a8f4d97325c881a4d5fe851"), 
+        ObjectId("5a8f4da8325c881a4d5fe85a")
+    ],
+    "name" : "Jean DUPONT",
+    "description" : "Référence n°: 343a7475s",
+    "number" : 1,
+    "picture" : "559d0b88f9be62603be0e8244e34765b",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("5aa7939bb8e8f1183cbd1ce5"),
+    "types" : [ 
+        ObjectId("5a8f4d7a325c881a4d5fe835")
+    ],
+    "name" : "Clément MARTIN",
+    "description" : "Référence n°: 830f5294n",
+    "number" : 2,
+    "__v" : 0,
+    "picture" : "484929ab4b4cfc701757208e75748491"
+}
+{
+    "_id" : ObjectId("5aaa4c67fa48f91c303c3faa"),
+    "types" : [ 
+        ObjectId("5a8febaa1a426fb0ec1cc301")
+    ],
+    "name" : "Henri GOLANT",
+    "description" : "Référence n°: 728t193o",
+    "number" : 3,
+    "picture" : "5afcd26dbe2f052cf1e4e2146c5ad186",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("5ab50f2507c6aa1698bc4a87"),
+    "types" : [ 
+        ObjectId("5a8f4d7a325c881a4d5fe835"), 
+        ObjectId("5a8f4d97325c881a4d5fe851"), 
+        ObjectId("5a8f4da8325c881a4d5fe85a"), 
+        ObjectId("5a8febaa1a426fb0ec1cc301")
+    ],
+    "name" : "Léon MARTIN",
+    "description" : "Référence n°: 228f192m",
+    "number" : 4,
+    "picture" : "ea4d6846e40604032fc3a1264db697a4",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("5ab5105d07c6aa1698bc4a8b"),
+    "types" : [ 
+        ObjectId("5a8f4d7a325c881a4d5fe835")
+    ],
+    "name" : "Jean PHILIPPE ",
+    "description" : "Référence n°: 234u991k",
+    "number" : 5,
+    "picture" : "1c1967d07abf472221c5c37642becb72",
+    "__v" : 0
+}
