@@ -8,7 +8,7 @@ PI² School project for AssetSagacity
 
 ***
 
-## How to install and use
+##  ⚙️ How to install and use
 
 1. Clone the repository or download the zip file 
 1. With Node.js command prompt, navigate where you downloaded the file and go to the PI2 folder using :
@@ -18,7 +18,7 @@ cd PI2
 
 ***
 
-## Install dependencies
+##  🏁 Install dependencies
 
 When you are in the PI2 folder, you need to install express/bootstrap/nunjucks/mongoose using:
 
@@ -26,7 +26,7 @@ When you are in the PI2 folder, you need to install express/bootstrap/nunjucks/m
 npm install 
 ```
 ***
-## MongoDB
+##  🐸 MongoDB
 
 To run the app, you need to have your MongoDB connection established:
 ```
@@ -36,24 +36,24 @@ cd 3.4
 mongod
 ```
 ***
-## Create database and fill it
+## 🔼 Create database and fill it
 
 To do so, take the two files clients.json and types.json and put them in the MongoDB/Server/3.4/bin folder (where is mongod) then run the command:
 
 ```
-mongoimport -host localhost:27017 -db asset -collection clients clients.json
+mongoimport --host localhost:27017 --db asset --collection clients clients.json
 ```
 Wait for the importation, then run : 
 
 ```
-mongoimport -host localhost:27017 -db asset -collection types types.json
+mongoimport --host localhost:27017 --db asset --collection types types.json
 ```
 
 Wait for importation then open your MongoDB GUI (robo3T or studio3T ect) and check if there is a new database named **asset** with 2 collections: **clients** and **types**. If they are here, it means that importation was successful.
 
 ***
 
-## Launch the app
+## ✔️ Launch the app
 
 Then you can launch the app using app.js in the Node.js command prompt like so:
 
