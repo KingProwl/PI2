@@ -1,14 +1,58 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h2 style="color:#FFFFFF">Clients avec les fonds <span color="color: {{type.color}}" style="color:#FFFFFF">{{type.name}}</span></h2>
+    <h2 style="color:#e0dfdc">Fond <span color="color: {{type.color}}" style="color:#e0dfdc">{{type.name}}</span></h2>
     <hr>
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card border-success mb-3">
+            <div class="card-body">
+                <h3 class="card-header">Informations</h3>
+                <h4 style="color:#636260">Name : <span style="color:black">{{type.name}}</span></h4>
+                <h4 style="color:#636260">Form juridique : <span style="color:black">{{type.forme_juridique}}</span></h4>
+                <h4 style="color:#636260">Famille : <span style="color:black">{{type.famille}}</span></h4>
+                <h4 style="color:#636260">ISIN : <span style="color:black">{{type.ISIN}}</span></h4>
+                <h4 style="color:#636260">AMF : <span style="color:black">{{type.AMF}}</span></h4>
+                <h4 style="color:#636260">Numero d'agrement :<span style="color:black">{{type.numero_agrement}}</span></h4>
+                <h4 style="color:#636260">Eligible PEA : <span style="color:black">{{type.PEA1}}</span></h4>
+                <h4 style="color:#636260">Eligible PEA PME : <span style="color:black">{{type.PEA2}}</span></h4>
+                <h4 style="color:#636260">Société : <span style="color:black">{{type.societe}}</span></h4>
+                <h4 style="color:#636260">Date de création : <span style="color:black">{{type.date_creation}}</span></h4>
+                <h4 style="color:#636260">Actif net : <span style="color:black">{{type.actif}}</span></h4>
+                <h4 style="color:#636260">Ratio de Sharpe : <span style="color:black">{{type.Sharpe}}</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card border-success mb-3">
+            <div class="card-body">
+                <h3 class="card-header">Performance</h3>
+                <h4 style="color:#636260">Perfomance 1 semaine : <span style="color:black">{{type.P1W}}</span></h4>
+                <h4 style="color:#636260">Performance depuis 1 Janvier : <span style="color:black">{{type.P01}}</span></h4>
+                <h4 style="color:#636260" >Performance 1 mois : <span style="color:black">{{type.P1M}}</span></h4>
+                <h4 style="color:#636260">Performance 3 mois : <span style="color:black">{{type.P3M}}</span></h4>
+                <h4 style="color:#636260">Performance 6 mois : <span style="color:black">{{type.P6M}}</span></h4>
+                <h4 style="color:#636260">Performance 1 an : <span style="color:black">{{type.P1Y}}</span></h4>
+                <h4 style="color:#636260">Performance 3 ans : <span style="color:black">{{type.P3Y}}</span></h4>
+                <h4 style="color:#636260">Perfomance 5 ans : <span style="color:black">{{type.P5Y}}</span> </h4>
+                <h4 style="color:#636260">Performance 10 ans : <span style="color:black">{{type.P10Y}}</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    <hr>
+    <h2 style="color:#FFFFFF">Clients ayant investi dans le fond <span color="color: {{type.color}}">{{type.name}}</span></h2>
     {% for p in clients %}
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <a href="/{{p._id}}" style="color:#FFFFFF" >{{p.name}}</a>
+    <div class="col-sm-4">
+            <div class="card border-success mb-3">
+              <div class="card-body">
+                <h4>{{p.name}}<h4>
+                <a href="/{{p._id}}" class="btn btn-primary float-center">Voir fiche client</a>
             </div>
         </div>
+    </div>
 
     {% endfor %}
 {% endblock %}
+
+
