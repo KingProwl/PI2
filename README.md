@@ -68,4 +68,29 @@ node app.js
 
 And go to [localhost:3000](http://localhost:3000/)
 
-**Written by Paul Ghafari**
+## 💎 Results:
+
+Here are a few screenshots in case you can't launch the application:
+
+<p align="center"> 
+<img src="https://github.com/KingProwl/PI2/blob/master/index.png">
+<h4 align="center">This is the index where you can see all the clients</h4>
+</p>
+
+<p align="center"> 
+<img src="https://github.com/KingProwl/PI2/blob/master/client.png">
+<h4 align="center">Here is the view when you click on one client</h4>
+</p>
+
+<p align="center"> 
+<img src="https://github.com/KingProwl/PI2/blob/master/fond.png">
+<h4 align="center">This is the view when you click on one of the funds</h4>
+</p>
+
+## 🎓 Credits:
+
+* Gautier DEBAIN
+* Louis DE MAINTENANT
+* Clément PITARD
+* Paul GHAFARI
+
